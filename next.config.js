@@ -7,6 +7,6 @@ module.exports = {
       process.env.SHOPIFY_STOREFRONT_ACCESSTOKEN,
   },
   images: {
-    domains: ['http://onlinestore.fi/'],
+    domains: ['onlinestore.fi'],
   },
 };

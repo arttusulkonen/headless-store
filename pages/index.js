@@ -3,6 +3,7 @@ import { ApolloClient, InMemoryCache } from '@apollo/client';
 import ProductList from '../components/ProductList';
 
 export default function NextPage(products) {
+  console.log(products);
   return <ProductList products={products} />;
 }
 
@@ -14,6 +15,7 @@ export async function getStaticProps() {
   const response = await client.query({
     query: SINGLE_PAGE_QUERY,
   });
+
   const products = response.data.products.edges;
   return {
     props: { products },
