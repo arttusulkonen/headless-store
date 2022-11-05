@@ -1,8 +1,9 @@
 import { SINGLE_PAGE_QUERY } from '../lib/queries';
 import { ApolloClient, InMemoryCache } from '@apollo/client';
+import ProductList from '../components/ProductList';
 
 export default function NextPage(products) {
-  return 'hello';
+  return <ProductList products={products} />;
 }
 
 export async function getStaticProps() {
