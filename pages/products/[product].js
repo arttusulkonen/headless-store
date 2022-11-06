@@ -3,9 +3,14 @@ import { GET_ALL_PRODUCTS, GET_PRODUCT } from '../../lib/queries';
 import { gql } from '@apollo/client';
 import { ApolloClient, InMemoryCache } from '@apollo/client';
 import { ShopifyData } from '../../lib/queries';
+import ProductPageContent from '../../components/ProductPageContent';
 
 export default function ProductPage({ product }) {
-  return <div>{product.name}</div>;
+  return (
+    <div>
+      <ProductPageContent product={product} />
+    </div>
+  );
 }
 
 export async function getStaticPaths() {
