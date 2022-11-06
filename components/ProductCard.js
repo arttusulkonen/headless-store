@@ -6,7 +6,7 @@ const ProductCard = ({ product }) => {
   const { sourceUrl, altText } = product.node.image;
 
   return (
-    <Link href={`/product/${slug}`}>
+    <Link href={`/products/${slug}`}>
       <div className="w-full bg-gray-200 rounded-3xl overflow-hidden">
         <div className="relative group-hover:opacity-75 h-72">
           <Image

@@ -3,7 +3,6 @@ import { ApolloClient, InMemoryCache } from '@apollo/client';
 import ProductList from '../components/ProductList';
 
 export default function NextPage(products) {
-  console.log(products);
   return <ProductList products={products} />;
 }
 
